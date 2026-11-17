@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Niyati Shah — Brand Marketing &amp; Marketing Analytics</title>
+<meta name="description" content="Niyati Shah — New York. Brand and integrated marketing with 8+ years taking campaigns from brief to launch to optimisation, plus the analytics behind them.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F8F5EF;
+  --paper-2:#EFEAE0;
+  --card:#FFFFFF;
+  --ink:#16130E;
+  --ink-2:#3B352C;
+  --muted:#6E6558;
+  --line:rgba(22,19,14,.16);
+  --line-2:rgba(22,19,14,.085);
+  --amber:#8A5712;
+  --amber-soft:rgba(138,87,18,.10);
+  --jade:#115F55;
+  --jade-soft:rgba(17,95,85,.09);
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --pad:clamp(20px,5vw,80px);
+  --maxw:1280px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--paper);color:var(--ink-2);
+  font-family:var(--sans);font-weight:400;font-size:16.5px;line-height:1.65;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+img{max-width:100%;display:block;height:auto}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--amber);color:var(--paper)}
+
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--pad)}
+.eyebrow{
+  font-family:var(--mono);font-size:11px;letter-spacing:.17em;text-transform:uppercase;
+  color:var(--muted);display:flex;align-items:center;gap:12px;
+}
+.eyebrow::after{content:"";flex:1;height:1px;background:var(--line-2)}
+.eyebrow .num{color:var(--amber);font-weight:500}
+.eyebrow.jade .num{color:var(--jade)}
+h2.sect{
+  font-family:var(--display);font-weight:300;font-size:clamp(32px,4.8vw,56px);
+  line-height:1.04;letter-spacing:-.025em;margin:22px 0 0;max-width:18ch;color:var(--ink);
+}
+.amp{font-family:var(--sans);font-weight:300;font-size:.78em;font-style:normal;letter-spacing:0;vertical-align:.03em}
+.lede{color:var(--muted);max-width:62ch;margin-top:16px;font-size:clamp(15px,1.35vw,17.5px)}
+section{padding:clamp(60px,8vw,110px) 0;position:relative}
+.alt{background:var(--paper-2)}
+
+.rv{opacity:0;transform:translateY(20px);transition:opacity .8s cubic-bezier(.22,1,.36,1),transform .8s cubic-bezier(.22,1,.36,1)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+/* ---------- nav ---------- */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:60;
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  background:rgba(248,245,239,0);border-bottom:1px solid transparent;
+  transition:background .35s ease,border-color .35s ease;
+}
+nav.solid{background:rgba(248,245,239,.9);border-bottom-color:var(--line-2)}
+.nav-in{max-width:var(--maxw);margin:0 auto;padding:14px var(--pad);display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brandmark{display:flex;align-items:baseline;gap:10px;color:var(--ink)}
+.brandmark .mono{font-family:var(--display);font-size:19px;letter-spacing:-.01em}
+.brandmark .tag{font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.nav-links{display:flex;align-items:center;gap:26px}
+.nav-links a{font-family:var(--mono);font-size:11.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);transition:color .25s}
+.nav-links a:hover{color:var(--ink)}
+.btn-res{
+  font-family:var(--mono);font-size:11px;letter-spacing:.11em;text-transform:uppercase;
+  border:1px solid var(--ink);padding:9px 16px;border-radius:999px;color:var(--ink);
+  transition:background .3s,color .3s;
+}
+.btn-res:hover{background:var(--ink);color:var(--paper)}
+@media(max-width:900px){.nav-links a:not(.btn-res){display:none}}
+
+/* ---------- hero ---------- */
+.hero{padding-top:clamp(104px,13vh,140px);padding-bottom:clamp(36px,5vw,56px)}
+.hero-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:clamp(28px,5vw,64px);align-items:center}
+.hero h1{
+  font-family:var(--display);font-weight:300;font-size:clamp(38px,5.6vw,76px);
+  line-height:1.0;letter-spacing:-.032em;color:var(--ink);
+}
+.hero h1 em{font-style:italic;color:var(--amber)}
+.hero h1 .jade{font-style:italic;color:var(--jade)}
+.hero .loc{
+  font-family:var(--mono);font-size:11px;letter-spacing:.17em;text-transform:uppercase;
+  color:var(--muted);margin-bottom:22px;display:flex;gap:16px;flex-wrap:wrap;align-items:center;
+}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--amber);display:inline-block;margin-right:7px}
+.hero p.sub{color:var(--ink-2);max-width:52ch;margin-top:24px;font-size:clamp(15.5px,1.45vw,18.5px)}
+.hero-cta{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}
+.cta{
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;
+  padding:13px 22px;border-radius:999px;border:1px solid var(--line);color:var(--ink);
+  display:inline-flex;align-items:center;gap:9px;transition:all .3s;background:var(--card);
+}
+.cta.primary{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.cta.primary:hover{background:var(--amber);border-color:var(--amber)}
+.cta:hover{border-color:var(--ink)}
+.portrait img{
+  width:100%;max-height:60svh;object-fit:cover;object-position:50% 26%;
+  border-radius:4px;border:1px solid var(--line-2);
+}
+.portrait .cap{
+  font-family:var(--mono);font-size:10px;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--muted);margin-top:12px;
+}
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:24px}
+  .portrait{order:-1}
+  .portrait img{max-height:40svh;object-position:50% 20%}
+}
+
+/* ---------- stats ---------- */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:10px}
+.stat{background:var(--card);border:1px solid var(--line-2);border-radius:4px;padding:clamp(20px,2.6vw,32px) clamp(16px,2vw,24px)}
+.stat .n{font-family:var(--display);font-weight:300;font-size:clamp(30px,4vw,48px);line-height:1;letter-spacing:-.03em;color:var(--ink)}
+.stat .n .u{color:var(--amber);font-size:.62em}
+.stat .l{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:11px;line-height:1.5}
+
+/* ---------- brand wall ---------- */
+.logowall{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px;margin-top:18px}
+.logo{background:var(--card);border:1px solid var(--line-2);border-radius:4px;height:100px;display:flex;align-items:center;justify-content:center;padding:20px}
+.logo img{max-height:40px;width:auto;max-width:100%;object-fit:contain;opacity:.88;transition:opacity .35s,transform .35s}
+.logo:hover img{opacity:1;transform:scale(1.05)}
+@media(max-width:560px){.logo{height:84px;padding:16px}.logo img{max-height:32px}}
+
+/* ---------- section head ---------- */
+.track-head{display:flex;justify-content:space-between;align-items:flex-end;gap:28px;flex-wrap:wrap}
+.track-meta{font-family:var(--mono);font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);text-align:right}
+
+/* ---------- cases ---------- */
+.cases{margin-top:clamp(30px,4vw,48px);border-top:1px solid var(--line-2)}
+.case{border-bottom:1px solid var(--line-2)}
+.case-head{
+  width:100%;background:none;border:0;color:inherit;font:inherit;cursor:pointer;text-align:left;
+  display:grid;grid-template-columns:60px 1fr auto;gap:clamp(14px,2.6vw,32px);align-items:center;
+  padding:clamp(22px,2.8vw,32px) 0;transition:padding-left .4s cubic-bezier(.22,1,.36,1);
+}
+.case-head:hover{padding-left:10px}
+.case-idx{font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--muted)}
+.case-title{display:block;font-family:var(--display);font-weight:300;font-size:clamp(22px,2.8vw,34px);line-height:1.14;letter-spacing:-.02em;max-width:34ch;color:var(--ink)}
+.case-sub{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:11px}
+.case-sub .pill{color:var(--amber);font-weight:500}
+.case.data .case-sub .pill{color:var(--jade)}
+.case-kpi{
+  display:inline-block;margin-top:13px;font-family:var(--mono);font-size:11px;letter-spacing:.04em;
+  color:var(--amber);background:var(--amber-soft);border-radius:999px;padding:6px 13px;
+}
+.plus{width:36px;height:36px;border:1px solid var(--line);border-radius:50%;position:relative;flex:none;transition:background .3s,border-color .3s,transform .4s}
+.plus::before,.plus::after{content:"";position:absolute;background:var(--ink);left:50%;top:50%;transition:transform .4s cubic-bezier(.22,1,.36,1),background .3s}
+.plus::before{width:12px;height:1px;transform:translate(-50%,-50%)}
+.plus::after{width:1px;height:12px;transform:translate(-50%,-50%)}
+.case-head:hover .plus{border-color:var(--amber)}
+.case.open .plus{background:var(--ink);border-color:var(--ink);transform:rotate(135deg)}
+.case.open .plus::before,.case.open .plus::after{background:var(--paper)}
+.case-thumbs{display:flex;gap:7px;margin-top:16px;flex-wrap:wrap}
+.case-thumbs img{width:72px;height:50px;object-fit:cover;border-radius:2px;opacity:.78;transition:opacity .35s;border:1px solid var(--line-2)}
+.case-head:hover .case-thumbs img{opacity:1}
+.case.open .case-thumbs{display:none}
+@media(max-width:700px){.case-thumbs img{width:56px;height:40px}}
+.case-body{max-height:0;overflow:hidden;transition:max-height .7s cubic-bezier(.22,1,.36,1)}
+.case-inner{padding:2px 0 clamp(32px,4.4vw,56px);display:grid;grid-template-columns:60px 1fr;gap:clamp(14px,2.6vw,32px)}
+.brief{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:22px;margin-bottom:28px}
+.brief div{border-top:1px solid var(--line-2);padding-top:13px}
+.brief h4{font-family:var(--mono);font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--amber);font-weight:500;margin-bottom:8px}
+.case.data .brief h4{color:var(--jade)}
+.brief p{font-size:14.5px;color:var(--ink-2);line-height:1.62}
+
+/* masonry galleries — every image keeps its own proportions, nothing cropped */
+.gal{margin:26px 0;column-gap:10px}
+.gal.g4,.gal.g3{column-count:3}
+.gal.g2{column-count:2}
+@media(max-width:900px){.gal.g4,.gal.g3{column-count:2}}
+@media(max-width:560px){.gal.g4,.gal.g3,.gal.g2{column-count:1}}
+.gal figure{
+  display:block;break-inside:avoid;-webkit-column-break-inside:avoid;page-break-inside:avoid;
+  margin:0 0 10px;position:relative;overflow:hidden;border-radius:3px;
+  background:var(--paper-2);cursor:zoom-in;border:1px solid var(--line-2);
+}
+.gal figure img{width:100%;height:auto;display:block;transition:transform .8s cubic-bezier(.22,1,.36,1)}
+.gal figure:hover img{transform:scale(1.035)}
+.gal figure figcaption{
+  position:absolute;left:0;right:0;bottom:0;padding:10px 12px;
+  font-family:var(--mono);font-size:9.5px;letter-spacing:.11em;text-transform:uppercase;
+  background:linear-gradient(0deg,rgba(22,19,14,.86),transparent);color:#fff;
+  opacity:0;transition:opacity .35s;
+}
+.gal figure:hover figcaption{opacity:1}
+
+.results{display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:10px;margin-top:26px}
+.res{background:var(--card);border:1px solid var(--line-2);border-radius:4px;padding:20px 18px}
+.res .n{font-family:var(--display);font-weight:300;font-size:clamp(25px,3vw,34px);line-height:1;color:var(--amber);letter-spacing:-.02em}
+.case.data .res .n{color:var(--jade)}
+.res .l{font-family:var(--mono);font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);margin-top:9px;line-height:1.5}
+.note{font-family:var(--mono);font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin-top:20px;line-height:1.7}
+.outlink{
+  display:inline-flex;align-items:center;gap:9px;margin-top:22px;color:var(--ink);
+  font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;
+  border-bottom:1px solid var(--line);padding-bottom:5px;transition:border-color .3s,color .3s;
+}
+.outlink:hover{border-color:var(--jade);color:var(--jade)}
+@media(max-width:700px){
+  .case-head{grid-template-columns:1fr auto;gap:14px}
+  .case-idx{display:none}
+  .case-inner{grid-template-columns:1fr}
+  .case-inner>.spacer{display:none}
+}
+
+/* ---------- dashboards ---------- */
+.dash-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:10px;margin-top:clamp(30px,4vw,48px)}
+.dash{background:var(--card);border:1px solid var(--line-2);border-radius:4px;padding:clamp(24px,2.8vw,34px);display:flex;flex-direction:column;gap:15px;transition:background .3s}
+.dash:hover{background:var(--jade-soft)}
+.dash .k{font-family:var(--mono);font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--jade);font-weight:500}
+.dash h3{font-family:var(--display);font-weight:300;font-size:clamp(21px,2.4vw,27px);line-height:1.14;letter-spacing:-.02em;color:var(--ink)}
+.dash p{font-size:14.5px;color:var(--muted);line-height:1.6}
+.kpis{display:flex;flex-wrap:wrap;gap:7px;margin-top:auto;padding-top:6px}
+.kpi{font-family:var(--mono);font-size:10.5px;letter-spacing:.04em;border:1px solid var(--line-2);border-radius:999px;padding:6px 11px;color:var(--ink-2);background:var(--paper)}
+.kpi b{color:var(--jade);font-weight:500}
+.dash .go{font-family:var(--mono);font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);display:inline-flex;gap:8px;align-items:center;transition:color .3s,gap .3s}
+.dash:hover .go{color:var(--jade);gap:13px}
+
+.dash-shot{display:block;width:100%;aspect-ratio:16/10;overflow:hidden;border-radius:3px;border:1px solid var(--line-2);background:var(--paper-2)}
+.dash-shot img{width:100%;height:100%;object-fit:cover;object-position:50% 0;transition:transform .9s cubic-bezier(.22,1,.36,1)}
+.dash:hover .dash-shot img{transform:scale(1.035)}
+
+/* ---------- timeline ---------- */
+.tl{margin-top:clamp(28px,4vw,48px);border-top:1px solid var(--line-2)}
+.row{display:grid;grid-template-columns:175px 1fr 1.15fr;gap:clamp(14px,2.6vw,36px);padding:clamp(20px,2.6vw,28px) 0;border-bottom:1px solid var(--line-2);align-items:start}
+.row .when{font-family:var(--mono);font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);padding-top:6px}
+.row h4{font-family:var(--display);font-weight:300;font-size:clamp(19px,2.1vw,25px);letter-spacing:-.015em;line-height:1.2;color:var(--ink)}
+.row .org{font-family:var(--mono);font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--amber);margin-top:7px}
+.row ul{list-style:none;color:var(--ink-2);font-size:14.5px;line-height:1.62}
+.row ul li{padding-left:16px;position:relative;margin-bottom:7px}
+.row ul li::before{content:"";position:absolute;left:0;top:10px;width:6px;height:1px;background:var(--amber)}
+@media(max-width:860px){.row{grid-template-columns:1fr;gap:10px}.row .when{padding-top:0}}
+
+/* ---------- about ---------- */
+.about-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(28px,5vw,72px);align-items:start;margin-top:clamp(28px,4vw,48px)}
+.about-grid p{color:var(--ink-2);margin-bottom:17px;font-size:clamp(15.5px,1.4vw,17px)}
+.headshot{display:flex;flex-direction:column;align-items:flex-start;gap:14px}
+.headshot img{
+  width:min(190px,56%);aspect-ratio:1;height:auto;border-radius:50%;object-fit:cover;
+  border:1px solid var(--line-2);box-shadow:0 0 0 7px var(--amber-soft);
+}
+.headshot .n{font-family:var(--display);font-weight:300;font-size:clamp(21px,2.2vw,26px);letter-spacing:-.02em;line-height:1.15;color:var(--ink)}
+.headshot .r{font-family:var(--mono);font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--amber);margin-top:7px}
+@media(max-width:860px){.about-grid{grid-template-columns:1fr}}
+
+/* ---------- recognition ---------- */
+.rec-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(24px,4vw,52px);margin-top:clamp(28px,4vw,48px);align-items:start}
+.rec-photo img{border-radius:4px;border:1px solid var(--line-2)}
+.rec-photo .cap{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:11px;line-height:1.6}
+.awards{display:flex;flex-direction:column;gap:12px}
+.aw{border:1px solid var(--line-2);border-radius:4px;background:var(--card);padding:18px 20px;display:flex;gap:16px;align-items:flex-start}
+.aw .y{font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;color:var(--amber);padding-top:4px;flex:none;font-weight:500}
+.aw h4{font-family:var(--display);font-weight:300;font-size:19px;letter-spacing:-.01em;line-height:1.25;color:var(--ink)}
+.aw p{font-size:13.5px;color:var(--muted);margin-top:5px;line-height:1.55}
+.quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:26px;margin-top:clamp(28px,4vw,44px)}
+.q{border-left:2px solid var(--amber);padding-left:20px}
+.q p{font-family:var(--display);font-weight:300;font-size:clamp(15.5px,1.5vw,17.5px);line-height:1.45;letter-spacing:-.01em;font-style:italic;color:var(--ink)}
+.q .who{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:12px}
+@media(max-width:860px){.rec-grid{grid-template-columns:1fr}}
+
+/* ---------- skills ---------- */
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(225px,1fr));gap:10px;margin-top:clamp(28px,4vw,48px)}
+.sk{background:var(--card);border:1px solid var(--line-2);border-radius:4px;padding:clamp(22px,2.6vw,30px)}
+.sk h4{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin-bottom:16px;font-weight:500}
+.sk.j h4{color:var(--jade)}
+.sk ul{list-style:none;display:flex;flex-wrap:wrap;gap:6px}
+.sk li{font-size:13px;border:1px solid var(--line-2);border-radius:999px;padding:6px 12px;color:var(--ink-2);background:var(--paper);transition:border-color .3s}
+.sk li:hover{border-color:var(--line)}
+
+/* ---------- contact ---------- */
+.contact h2{
+  font-family:var(--display);font-weight:300;font-size:clamp(34px,6.5vw,82px);
+  line-height:1.0;letter-spacing:-.032em;max-width:15ch;margin-top:22px;color:var(--ink);
+}
+.contact h2 em{font-style:italic;color:var(--amber)}
+.clinks{display:flex;flex-wrap:wrap;gap:11px;margin-top:38px}
+.clinks a{
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;
+  border:1px solid var(--line);border-radius:999px;padding:14px 23px;transition:all .3s;
+  display:inline-flex;gap:9px;align-items:center;color:var(--ink);background:var(--card);
+}
+.clinks a:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+footer{border-top:1px solid var(--line-2);padding:26px 0;font-family:var(--mono);font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--muted)}
+.foot-in{max-width:var(--maxw);margin:0 auto;padding:0 var(--pad);display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+
+/* ---------- lightbox ---------- */
+.lb{position:fixed;inset:0;z-index:100;background:rgba(18,15,11,.95);display:none;align-items:center;justify-content:center;padding:4vw;backdrop-filter:blur(6px)}
+.lb.on{display:flex}
+.lb img{max-width:92vw;max-height:84vh;object-fit:contain;border-radius:3px;background:#1a1712}
+.lb .cap{position:absolute;bottom:3vh;left:0;right:0;text-align:center;font-family:var(--mono);font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:rgba(255,255,255,.72)}
+.lb button{position:absolute;background:none;border:1px solid rgba(255,255,255,.3);color:#fff;width:46px;height:46px;border-radius:50%;cursor:pointer;font-size:18px;transition:background .3s,color .3s}
+.lb button:hover{background:#fff;color:#16130E}
+.lb .x{top:3vh;right:3vw}
+.lb .prev{left:3vw;top:50%;transform:translateY(-50%)}
+.lb .next{right:3vw;top:50%;transform:translateY(-50%)}
+@media(max-width:700px){.lb .prev,.lb .next{top:auto;bottom:3vh;transform:none}.lb .prev{left:28vw}.lb .next{right:28vw}}
+
+.prog{position:fixed;top:0;left:0;height:2px;background:var(--amber);z-index:70;width:0}
+</style>
+</head>
+<body>
+
+<div class="prog" id="prog"></div>
+
+<nav id="nav">
+  <div class="nav-in">
+    <a href="#top" class="brandmark">
+      <span class="mono">Niyati Shah</span>
+    </a>
+    <div class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#data">Analytics</a>
+      <a href="#experience">Experience</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="assets/Niyati-Shah-Resume.pdf" class="btn-res" target="_blank" rel="noopener">Résumé</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ 1. HERO ============ -->
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="loc">
+        <span><span class="dot"></span>Brand Marketing</span>
+        <span>×</span>
+        <span>Marketing Analytics</span>
+      </div>
+      <h1>I build brands<br>people <em>feel</em><br><span class="amp">&amp;</span> the numbers<br>that <span class="jade">prove it</span>.</h1>
+      <p class="sub">Eight years taking campaigns from brief to launch to optimisation — across paid, owned, earned and social. I've built the brand and I've audited the ROAS, and I'm most useful where those two things meet.</p>
+      <div class="hero-cta">
+        <a href="#work" class="cta primary">Selected work</a>
+        <a href="#data" class="cta">Analytics →</a>
+        <a href="assets/Niyati-Shah-Resume.pdf" class="cta" target="_blank" rel="noopener">Résumé</a>
+      </div>
+    </div>
+    <div class="portrait">
+      <img src="assets/portrait.jpg" alt="Niyati Shah at a Burberry retail activation" width="1210" height="1613">
+      <div class="cap">Burberry activation — Mumbai, India</div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ 2. THE NUMBERS ============ -->
+<section style="padding-top:clamp(28px,4vw,48px)">
+  <div class="wrap">
+    <div class="stats rv">
+      <div class="stat"><div class="n" data-count="22" data-prefix="$" data-suffix="M">$22M</div><div class="l">Portfolio revenue managed</div></div>
+      <div class="stat"><div class="n" data-count="7" data-prefix="$" data-suffix="M">$7M</div><div class="l">P&amp;L owned</div></div>
+      <div class="stat"><div class="n" data-count="200" data-prefix="+" data-suffix="%">+200%</div><div class="l">ROAS lift, paid media</div></div>
+      <div class="stat"><div class="n" data-count="230" data-prefix="+" data-suffix="%">+230%</div><div class="l">E-commerce sales growth</div></div>
+      <div class="stat"><div class="n" data-count="110" data-suffix="">110</div><div class="l">Points of sale, national launch</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BRAND WALL ============ -->
+<section style="padding-top:clamp(30px,3.5vw,48px);padding-bottom:0">
+  <div class="wrap rv">
+    <div class="eyebrow">Brands I've worked with</div>
+    <div class="logowall">
+        <div class="logo"><img loading="lazy" src="assets/logos/burberry.png" alt="Burberry"></div>
+        <div class="logo"><img loading="lazy" src="assets/logos/calvin-klein.png" alt="Calvin Klein"></div>
+        <div class="logo"><img loading="lazy" src="assets/logos/chloe.png" alt="Chloé"></div>
+        <div class="logo"><img loading="lazy" src="assets/logos/marc-jacobs.png" alt="Marc Jacobs"></div>
+        <div class="logo"><img loading="lazy" src="assets/logos/davidoff.png" alt="Davidoff"></div>
+        <div class="logo"><img loading="lazy" src="assets/logos/miru.png" alt="Maison Miru"></div>
+        <div class="logo"><img loading="lazy" src="assets/logos/hudson-creative.png" alt="Hudson Creative"></div>
+        <div class="logo"><img loading="lazy" src="assets/logos/laguardia.png" alt="LaGuardia Community College"></div>
+        <div class="logo"><img loading="lazy" src="assets/logos/method.png" alt="Method"></div>
+        <div class="logo"><img loading="lazy" src="assets/logos/sbi.png" alt="SBI"></div>
+        <div class="logo"><img loading="lazy" src="assets/logos/idbi-bank.png" alt="IDBI Bank"></div>
+        <div class="logo"><img loading="lazy" src="assets/logos/dextrus.png" alt="Dextrus"></div>
+        <div class="logo"><img loading="lazy" src="assets/logos/baro-market.png" alt="Baro Market"></div>
+        <div class="logo"><img loading="lazy" src="assets/logos/the-sound-space.png" alt="The Sound Space"></div>
+        <div class="logo"><img loading="lazy" src="assets/logos/paul-adams.png" alt="Paul Adams"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. SELECTED WORK ============ -->
+<section id="work" style="padding-top:clamp(44px,5vw,72px)">
+  <div class="wrap">
+    <div class="track-head rv">
+      <div style="flex:1;min-width:280px">
+        <div class="eyebrow"><span class="num">01</span> Selected work</div>
+        <h2 class="sect">Brand marketing <span class="amp">&amp;</span> growth</h2>
+        <p class="lede">Luxury fragrance, hospitality, retail and D2C. Click any case to open the detail and the campaign photography.</p>
+      </div>
+      <div class="track-meta">5 cases · 2016 — present</div>
+    </div>
+
+    <div class="cases">
+
+      <!-- C/01 -->
+      <article class="case rv" data-case>
+        <button class="case-head" aria-expanded="false">
+          <span class="case-idx">C/01</span>
+          <span>
+            <span class="case-title">Burberry Goddess — the biggest fragrance launch India had seen</span>
+            <span class="case-sub"><span class="pill">Integrated launch</span> &nbsp;·&nbsp; Retail &nbsp;·&nbsp; E-commerce &nbsp;·&nbsp; PR &nbsp;·&nbsp; Influencer</span>
+            <span class="case-kpi">#1 female fragrance in Q1 · 110 POS · +230% e-commerce</span>
+            <span class="case-thumbs">
+              <img src="assets/popup-atrium.jpg" alt="" aria-hidden="true">
+              <img src="assets/ooh-billboard.jpg" alt="" aria-hidden="true">
+              <img src="assets/retail-sephora.jpg" alt="" aria-hidden="true">
+              <img src="assets/influencer-grid.jpg" alt="" aria-hidden="true">
+            </span>
+          </span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="case-body">
+          <div class="case-inner">
+            <div class="spacer"></div>
+            <div class="cb">
+              <div class="brief">
+                <div><h4>Objective</h4><p>Grow Burberry's rank in the female fragrance category in a market that barely bought female fragrance.</p></div>
+                <div><h4>Insight</h4><p>India is a male-dominated fragrance market. Women weren't under-served by product — they were under-served by occasion.</p></div>
+                <div><h4>Idea</h4><p>A 30×30 ft immersive experience, powered by a PR event with Sephora Beauty, that made the fragrance a destination rather than a shelf.</p></div>
+                <div><h4>Execution</h4><p>110 points of sale, pop-ups and outdoor, homepage and category ads on Nykaa, Sephora and Shoppers Stop, affinity-based Google and YouTube video, and the top 100 beauty influencers.</p></div>
+              </div>
+
+              <div class="gal g3">
+                <figure data-lb="assets/popup-atrium.jpg" data-cap="Immersive pop-up — Palladium, Mumbai"><img loading="lazy" src="assets/popup-atrium.jpg" alt="Burberry Goddess pop-up installation in a mall atrium"><figcaption>Pop-up — mall atrium</figcaption></figure>
+                <figure data-lb="assets/popup-outdoor.jpg" data-cap="Outdoor pop-up build"><img loading="lazy" src="assets/popup-outdoor.jpg" alt="Outdoor Burberry Goddess pop-up structure"><figcaption>Outdoor build</figcaption></figure>
+                <figure data-lb="assets/popup-model.jpg" data-cap="Pop-up — visitor experience"><img loading="lazy" src="assets/popup-model.jpg" alt="Visitor at the Burberry Goddess pop-up"><figcaption>Visitor experience</figcaption></figure>
+                <figure data-lb="assets/ooh-billboard.jpg" data-cap="Outdoor — Goa"><img loading="lazy" src="assets/ooh-billboard.jpg" alt="Burberry Goddess outdoor billboard"><figcaption>Outdoor — Goa</figcaption></figure>
+                <figure data-lb="assets/retail-sephora.jpg" data-cap="Sephora — in-store category takeover"><img loading="lazy" src="assets/retail-sephora.jpg" alt="Burberry Goddess display inside Sephora"><figcaption>Sephora in-store</figcaption></figure>
+                <figure data-lb="assets/retail-parcos.jpg" data-cap="Parcos — retail activation"><img loading="lazy" src="assets/retail-parcos.jpg" alt="Burberry Goddess retail activation at Parcos"><figcaption>Retail activation</figcaption></figure>
+                <figure data-lb="assets/retail-mall.jpg" data-cap="Mall storefront takeover"><img loading="lazy" src="assets/retail-mall.jpg" alt="Mall storefront with Burberry Goddess campaign"><figcaption>Storefront takeover</figcaption></figure>
+                <figure data-lb="assets/ecom-sephora.jpg" data-cap="Sephora — homepage banner"><img loading="lazy" src="assets/ecom-sephora.jpg" alt="Sephora homepage banner for Burberry Goddess"><figcaption>E-com — homepage</figcaption></figure>
+                <figure data-lb="assets/ecom-nykaa.jpg" data-cap="Nykaa app — new launch placement"><img loading="lazy" src="assets/ecom-nykaa.jpg" alt="Nykaa app placement for Burberry Goddess"><figcaption>Nykaa app</figcaption></figure>
+                <figure data-lb="assets/influencer-grid.jpg" data-cap="Influencer programme — 14 KOLs, 2.5M+ impressions"><img loading="lazy" src="assets/influencer-grid.jpg" alt="Grid of influencer content for the campaign"><figcaption>Influencer content</figcaption></figure>
+                <figure data-lb="assets/press-goddess.jpg" data-cap="Press — Bombay Times"><img loading="lazy" src="assets/press-goddess.jpg" alt="Press coverage of the fragrance launch"><figcaption>Press coverage</figcaption></figure>
+              </div>
+
+              <div class="results">
+                <div class="res"><div class="n">#1</div><div class="l">Female fragrance, first quarter of launch</div></div>
+                <div class="res"><div class="n">110</div><div class="l">Points of sale at launch</div></div>
+                <div class="res"><div class="n">+230%</div><div class="l">Nykaa.com sales, powered by the 10ml SKU</div></div>
+                <div class="res"><div class="n">+30%</div><div class="l">Click-through rate, paid social &amp; search</div></div>
+                <div class="res"><div class="n">1.36M</div><div class="l">Google &amp; YouTube impressions</div></div>
+              </div>
+              <p class="note">Awarded the Group's "Game Changer Award" — the highest sales by a single fragrance brand in the Indian market.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- C/02 -->
+      <article class="case rv" data-case>
+        <button class="case-head" aria-expanded="false">
+          <span class="case-idx">C/02</span>
+          <span>
+            <span class="case-title">Hudson Creative — paid media across hospitality and culture clients</span>
+            <span class="case-sub"><span class="pill">Paid social &amp; search</span> &nbsp;·&nbsp; Multi-client &nbsp;·&nbsp; A/B testing</span>
+            <span class="case-kpi">+200% ROAS · +35% conversions · −20% CPC</span>
+          </span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="case-body">
+          <div class="case-inner">
+            <div class="spacer"></div>
+            <div class="cb">
+              <div class="brief">
+                <div><h4>Clients</h4><p>The Whitney Museum, MOGO Chinese, LDV Hospitality and Bonura Hospitality — four very different audiences sharing one media budget cycle.</p></div>
+                <div><h4>Channels</h4><p>Paid social and search across Meta, Google Ads, TikTok and LinkedIn, with targeting, messaging and creative refined in cycles rather than set once.</p></div>
+                <div><h4>Testing &amp; budget</h4><p>A/B tested creative and copy, promoted winners on the evidence, and moved spend off underperforming ad sets in-flight — not at month end, when it's already gone.</p></div>
+              </div>
+              <div class="results">
+                <div class="res"><div class="n">+200%</div><div class="l">ROAS, via budget and platform-mix reallocation</div></div>
+                <div class="res"><div class="n">+35%</div><div class="l">Conversions, shifting spend to top performers</div></div>
+                <div class="res"><div class="n">−20%</div><div class="l">Cost per click</div></div>
+                <div class="res"><div class="n">+15%</div><div class="l">Click-through rate</div></div>
+                <div class="res"><div class="n">+12%</div><div class="l">Engagement rate</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- C/03 -->
+      <article class="case rv" data-case>
+        <button class="case-head" aria-expanded="false">
+          <span class="case-idx">C/03</span>
+          <span>
+            <span class="case-title">Maison Miru — performance and predictive work for a jewellery brand</span>
+            <span class="case-sub"><span class="pill">Paid &amp; owned</span> &nbsp;·&nbsp; Predictive analytics &nbsp;·&nbsp; Retention</span>
+            <span class="case-kpi">+100% ROAS · +30% website traffic</span>
+            <span class="case-thumbs">
+              <img src="assets/dash-1.jpg" alt="" aria-hidden="true">
+              <img src="assets/dash-4.jpg" alt="" aria-hidden="true">
+              <img src="assets/dash-3.jpg" alt="" aria-hidden="true">
+            </span>
+          </span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="case-body">
+          <div class="case-inner">
+            <div class="spacer"></div>
+            <div class="cb">
+              <div class="brief">
+                <div><h4>Remit</h4><p>Analysed performance across paid and owned channels — Shopify, Meta, Google, Pinterest and TikTok — and delivered what it meant, not just what it said.</p></div>
+                <div><h4>Testing</h4><p>A/B testing across Meta ads to lift click-through and pull more qualified traffic to the site.</p></div>
+                <div><h4>Predictive</h4><p>Modelled next order date, churn risk and bundling behaviour by cohort, then applied the findings to the loyalty programme to improve retention.</p></div>
+              </div>
+              <div class="results">
+                <div class="res"><div class="n">+100%</div><div class="l">ROAS performance improvement</div></div>
+                <div class="res"><div class="n">+30%</div><div class="l">Website traffic, via Meta creative testing</div></div>
+                <div class="res"><div class="n">3</div><div class="l">Predictive models: churn, next order, bundling</div></div>
+              </div>
+              <div class="gal g2">
+                <figure data-lb="assets/dash-1.jpg" data-cap="Meta Ads performance dashboard — funnel-level monitor"><img loading="lazy" src="assets/dash-1.jpg" alt="Meta Ads performance dashboard"><figcaption>Paid media dashboard</figcaption></figure>
+                <figure data-lb="assets/dash-4.jpg" data-cap="Rebrand impact — revenue, AOV and customer mix"><img loading="lazy" src="assets/dash-4.jpg" alt="Rebrand impact summary dashboard"><figcaption>Rebrand impact</figcaption></figure>
+              </div>
+              <a class="outlink" href="#data">All four dashboards, live →</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- C/04 -->
+      <article class="case rv" data-case>
+        <button class="case-head" aria-expanded="false">
+          <span class="case-idx">C/04</span>
+          <span>
+            <span class="case-title">Multi-house activations — Chloé, Marc Jacobs, Tiffany <span class="amp">&amp;</span> Co.</span>
+            <span class="case-sub"><span class="pill">Retail &amp; events</span> &nbsp;·&nbsp; Category management &nbsp;·&nbsp; P&amp;L</span>
+            <span class="case-kpi">+30% YoY revenue · 15% spend saved</span>
+            <span class="case-thumbs">
+              <img src="assets/activation-mj.jpg" alt="" aria-hidden="true">
+              <img src="assets/activation-chloe.jpg" alt="" aria-hidden="true">
+              <img src="assets/activation-xmas.jpg" alt="" aria-hidden="true">
+            </span>
+          </span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="case-body">
+          <div class="case-inner">
+            <div class="spacer"></div>
+            <div class="cb">
+              <div class="brief">
+                <div><h4>Scope</h4><p>Annual pop-ups, seasonal animations and event collaborations across the house portfolio, built and rebuilt around the retail calendar.</p></div>
+                <div><h4>Commercial</h4><p>Managed the $7M Burberry fragrance P&amp;L and worked with Legal and Compliance on stock inwarding and margin decisions.</p></div>
+                <div><h4>Negotiation</h4><p>Saved 15% of marketing spend by renegotiating advertising costs and leaning on retail relationships with Sephora and Shoppers Stop.</p></div>
+              </div>
+              <div class="gal g4">
+                <figure data-lb="assets/activation-mj.jpg" data-cap="Seasonal animation — retail build"><img loading="lazy" src="assets/activation-mj.jpg" alt="Seasonal retail animation build"><figcaption>Retail animation</figcaption></figure>
+                <figure data-lb="assets/activation-xmas.jpg" data-cap="Holiday animation — mall build"><img loading="lazy" src="assets/activation-xmas.jpg" alt="Holiday animation in a shopping mall"><figcaption>Holiday build</figcaption></figure>
+                <figure data-lb="assets/activation-chloe.jpg" data-cap="Chloé — in-mall activation"><img loading="lazy" src="assets/activation-chloe.jpg" alt="Chloe in-mall activation stand"><figcaption>Chloé activation</figcaption></figure>
+                <figure data-lb="assets/press-bazaar.jpg" data-cap="Beauty &amp; lifestyle press placements"><img loading="lazy" src="assets/press-bazaar.jpg" alt="Magazine beauty press placement"><figcaption>Press placements</figcaption></figure>
+              </div>
+              <div class="results">
+                <div class="res"><div class="n">+30%</div><div class="l">YoY revenue growth, omnichannel</div></div>
+                <div class="res"><div class="n">15%</div><div class="l">Marketing spend saved via negotiation</div></div>
+                <div class="res"><div class="n">6</div><div class="l">Luxury houses managed concurrently</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- C/05 -->
+      <article class="case rv" data-case>
+        <button class="case-head" aria-expanded="false">
+          <span class="case-idx">C/05</span>
+          <span>
+            <span class="case-title">Davidoff × Sunburn — fragrance meets India's largest music festival</span>
+            <span class="case-sub"><span class="pill">Brand partnership</span> &nbsp;·&nbsp; Experiential &nbsp;·&nbsp; Content</span>
+            <span class="case-kpi">Part of a $22M fragrance portfolio</span>
+            <span class="case-thumbs">
+              <img src="assets/davidoff-1.jpg" alt="" aria-hidden="true">
+              <img src="assets/davidoff-2.jpg" alt="" aria-hidden="true">
+            </span>
+          </span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="case-body">
+          <div class="case-inner">
+            <div class="spacer"></div>
+            <div class="cb">
+              <div class="brief">
+                <div><h4>The move</h4><p>Put a heritage men's fragrance where its next customer actually spends a weekend: Sunburn, India's largest international music festival.</p></div>
+                <div><h4>Execution</h4><p>Branded festival presence, sampling and content capture across the weekend, feeding social and e-commerce for the quarter that followed.</p></div>
+                <div><h4>Why it worked</h4><p>Fragrance is bought on association. A festival gives you three days of it — and a content library you can't buy in a studio.</p></div>
+              </div>
+              <div class="gal g2">
+                <figure data-lb="assets/davidoff-stage.jpg" data-cap="Davidoff on the Sunburn main stage — Goa"><img loading="lazy" src="assets/davidoff-stage.jpg" alt="Davidoff branding on the Sunburn main stage"><figcaption>Main stage — Sunburn Goa</figcaption></figure>
+                <figure data-lb="assets/davidoff-1.jpg" data-cap="Davidoff × Sunburn — festival activation"><img loading="lazy" src="assets/davidoff-1.jpg" alt="Davidoff activation at the Sunburn festival"><figcaption>Festival activation</figcaption></figure>
+                <figure data-lb="assets/davidoff-2.jpg" data-cap="Davidoff × Sunburn × Myntra — content &amp; commerce"><img loading="lazy" src="assets/davidoff-2.jpg" alt="Davidoff Sunburn Myntra content and commerce assets"><figcaption>Content &amp; commerce</figcaption></figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. DATA ============ -->
+<section id="data" class="alt">
+  <div class="wrap">
+    <div class="track-head rv">
+      <div style="flex:1;min-width:280px">
+        <div class="eyebrow jade"><span class="num">02</span> Selected work</div>
+        <h2 class="sect">Data <span class="amp">&amp;</span> analytics</h2>
+        <p class="lede">Live dashboards answering what a brand team actually asks: which creative to kill, what the rebrand cost, where the money is going. All four open in a new tab.</p>
+      </div>
+      <div class="track-meta">4 live dashboards<br>Anonymised client data</div>
+    </div>
+
+    <div class="dash-grid rv">
+      <a class="dash" href="https://nshah14-25.github.io/analytics-portfolio/Ads_Dashboard.html" target="_blank" rel="noopener">
+        <span class="dash-shot"><img loading="lazy" src="assets/dash-1.jpg" alt="Meta Ads performance dashboard"></span>
+        <span class="k">D/01 — Paid media</span>
+        <h3>Meta Ads performance dashboard</h3>
+        <p>Campaign and creative performance with a funnel-level monitor — what to watch at awareness, traffic, engagement and leads, benchmarked against targets, and which ad set to pause today.</p>
+        <div class="kpis">
+          <span class="kpi">Best ROAS <b>3.79</b></span>
+          <span class="kpi">Lowest CPM <b>$1.48</b></span>
+          <span class="kpi">Best CTR <b>2.45%</b></span>
+        </div>
+        <span class="go">Open dashboard →</span>
+      </a>
+
+      <a class="dash" href="https://nshah14-25.github.io/analytics-portfolio/meta_ads_creative_performance.html" target="_blank" rel="noopener">
+        <span class="dash-shot"><img loading="lazy" src="assets/dash-2.jpg" alt="Creative performance analysis"></span>
+        <span class="k">D/02 — Creative</span>
+        <h3>Creative performance analysis</h3>
+        <p>Two 30-day periods side by side, broken out by creative format, product line and individual ad. Built to settle the recurring argument about whether video earns its budget.</p>
+        <div class="kpis">
+          <span class="kpi">Period-over-period</span>
+          <span class="kpi">By <b>format</b></span>
+          <span class="kpi">Top ads by <b>ROAS</b></span>
+        </div>
+        <span class="go">Open dashboard →</span>
+      </a>
+
+      <a class="dash" href="https://nshah14-25.github.io/analytics-portfolio/customer_insights_rebrand.html" target="_blank" rel="noopener">
+        <span class="dash-shot"><img loading="lazy" src="assets/dash-3.jpg" alt="Customer insights — rebrand"></span>
+        <span class="k">D/03 — Customer</span>
+        <h3>Customer insights — rebrand</h3>
+        <p>New versus returning customers before and after a brand relaunch. The finding: AOV held firm while new-customer volume fell, making it a top-of-funnel problem, not a site problem.</p>
+        <div class="kpis">
+          <span class="kpi">New customers <b>−6.25%</b></span>
+          <span class="kpi">AOV <b>+0.3%</b></span>
+          <span class="kpi">Returning <b>flat</b></span>
+        </div>
+        <span class="go">Open dashboard →</span>
+      </a>
+
+      <a class="dash" href="https://nshah14-25.github.io/analytics-portfolio/rebrand_customer_insights.html" target="_blank" rel="noopener">
+        <span class="dash-shot"><img loading="lazy" src="assets/dash-4.jpg" alt="Rebrand impact summary"></span>
+        <span class="k">D/04 — Commercial</span>
+        <h3>Rebrand impact summary</h3>
+        <p>Two weeks either side of launch: revenue, AOV and customer mix. Revenue grew on fewer customers — the rebrand bought quality of spend, not volume, and the new:returning ratio never moved.</p>
+        <div class="kpis">
+          <span class="kpi">Revenue <b>+1.2%</b></span>
+          <span class="kpi">Customers <b>−2.5%</b></span>
+          <span class="kpi">Rev/customer <b>+$5.20</b></span>
+        </div>
+        <span class="go">Open dashboard →</span>
+      </a>
+    </div>
+
+    <p class="note">Built with SQL, GA4, Tableau and Power BI. Client identifiers removed; figures are real.</p>
+  </div>
+</section>
+
+<!-- ============ 5. EXPERIENCE ============ -->
+<section id="experience">
+  <div class="wrap">
+    <div class="rv">
+      <div class="eyebrow"><span class="num">03</span> Experience</div>
+      <h2 class="sect">Professional experience</h2>
+    </div>
+    <div class="tl rv">
+      <div class="row">
+        <div class="when">Mar 2026 — present</div>
+        <div><h4>College Assistant</h4><div class="org">LaGuardia Community College — New York</div></div>
+        <ul>
+          <li>Designed and administered a 165-respondent equity-focused student survey, analysing findings to surface departmental gaps</li>
+          <li>Built CRM-informed audience personas and the social media calendar</li>
+          <li>Improved Fall 2026 enrollment by 10%</li>
+        </ul>
+      </div>
+      <div class="row">
+        <div class="when">Jul 2026 — Aug 2026</div>
+        <div><h4>Digital Marketing Intern</h4><div class="org">Hudson Creative — New York</div></div>
+        <ul>
+          <li>Managed paid social and search across Meta, Google Ads, TikTok and LinkedIn for brand and hospitality clients</li>
+          <li>CTR +15% and CPC −20% through targeting and creative testing; ROAS +200% via budget and platform-mix reallocation</li>
+          <li>Clients: The Whitney Museum, MOGO Chinese, LDV Hospitality, Bonura Hospitality</li>
+        </ul>
+      </div>
+      <div class="row">
+        <div class="when">Feb 2026 — Apr 2026</div>
+        <div><h4>Marketing Intern</h4><div class="org">Maison Miru — New York</div></div>
+        <ul>
+          <li>Analysed paid and owned performance (Shopify, Meta, Google, Pinterest, TikTok), improving ROAS by 100%</li>
+          <li>A/B testing across Meta ads — website traffic +30%</li>
+          <li>Predictive analysis across the customer portfolio: next order date, churn risk and bundling by cohort</li>
+        </ul>
+      </div>
+      <div class="row">
+        <div class="when">Feb 2022 — Jan 2025</div>
+        <div><h4>Assistant Brand Manager</h4><div class="org">COTY — Mumbai, India</div></div>
+        <ul>
+          <li>Owned the $7M Burberry fragrance P&amp;L within a $22M luxury portfolio — Burberry, Calvin Klein, Marc Jacobs, Davidoff and Chloé</li>
+          <li>Partnered with Legal and Compliance on stock inwarding and margin decisions</li>
+          <li>Launched Burberry Goddess across 110 POS — #1 female fragrance in its first quarter</li>
+          <li>Grew revenue 30% YoY across retail, e-commerce, PR, influencer and digital</li>
+        </ul>
+      </div>
+      <div class="row">
+        <div class="when">Apr 2018 — Feb 2022</div>
+        <div><h4>Senior PR Account Executive</h4><div class="org">Mirabilis Inc: Integrated Communications</div></div>
+        <ul>
+          <li>Led media relations and PR strategy across co-working, lifestyle and education clients</li>
+          <li>Worked directly with the founder of Dextrus on briefs and content writing</li>
+          <li>Drove earned media placements and co-branded activations</li>
+        </ul>
+      </div>
+      <div class="row">
+        <div class="when">Sep 2016 — Feb 2018</div>
+        <div><h4>Graduate Management Trainee</h4><div class="org">Omnicom Media Group — Mumbai, India</div></div>
+        <ul>
+          <li>Core team member on the launch of SBI's financial app — India's largest public sector bank</li>
+          <li>Partnered with production teams on ad creation and wrote media proposals</li>
+          <li>Optimised campaigns across TV, digital, print and radio</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="margin-top:clamp(40px,5vw,64px)" class="rv">
+      <div class="eyebrow">Education</div>
+      <div class="tl" style="margin-top:22px">
+        <div class="row">
+          <div class="when">Expected May 2027</div>
+          <div><h4>MS, Marketing Analytics</h4><div class="org">Baruch College, Zicklin School of Business</div></div>
+          <ul><li>GPA 3.9</li></ul>
+        </div>
+        <div class="row">
+          <div class="when">May 2016</div>
+          <div><h4>MBA, International Business</h4><div class="org">SDA Bocconi — India &amp; Italy</div></div>
+          <ul><li>GPA 3.5 · Summer intern, Coca-Cola Beverages · Women in Leadership Scholarship (80% tuition grant)</li></ul>
+        </div>
+        <div class="row">
+          <div class="when">May 2014</div>
+          <div><h4>Bachelor's, Accounting <span class="amp">&amp;</span> Finance</h4><div class="org">University of Mumbai</div></div>
+          <ul><li>GPA 3.98</li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. RECOGNITION ============ -->
+<section id="recognition" class="alt">
+  <div class="wrap">
+    <div class="rv">
+      <div class="eyebrow"><span class="num">04</span> Recognition</div>
+      <h2 class="sect">Awards and what my peers say</h2>
+    </div>
+    <div class="rec-grid rv">
+      <div class="rec-photo">
+        <img loading="lazy" src="assets/award-elle.jpg" alt="Niyati Shah at the Elle India Beauty Awards" width="720" height="960">
+        <div class="cap">Elle India Beauty Awards — Burberry won Best Fragrance, Men's category</div>
+      </div>
+      <div class="awards">
+        <div class="aw">
+          <div class="y">AWARD</div>
+          <div>
+            <h4>Game Changer Award</h4>
+            <p>Awarded by the Group for delivering the highest sales by a single fragrance brand in the Indian market, on the back of Burberry's first and largest immersive pop-up.</p>
+          </div>
+        </div>
+        <div class="aw">
+          <div class="y">AWARD</div>
+          <div>
+            <h4>Elle Award — Best Fragrance, Men's</h4>
+            <p>Won by Burberry on the back of campaigns I supported.</p>
+          </div>
+        </div>
+        <div class="aw">
+          <div class="y">GRANT</div>
+          <div>
+            <h4>Women in Leadership Scholarship</h4>
+            <p>80% tuition grant toward the MBA at SDA Bocconi.</p>
+          </div>
+        </div>
+        <div class="aw">
+          <div class="y">PRESS</div>
+          <div>
+            <h4>Coverage in Vogue, GQ, Elle <span class="amp">&amp;</span> national dailies</h4>
+            <p>Earned through curated content, press releases and media seeding across the fragrance portfolio.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="quotes rv">
+      <div class="q">
+        <p>"Her work ethic, specific skill sets and eye for detail have proven to be an asset to the organisation — she has my highest recommendation."</p>
+        <div class="who">Vishal Gurtu — Managing Director, India · Tarz Distribution</div>
+      </div>
+      <div class="q">
+        <p>"A natural leader who has earned the respect of her colleagues — highly adaptable, always staying ahead of industry trends."</p>
+        <div class="who">Ruchi Shangari — General Manager · Tarz Distribution</div>
+      </div>
+      <div class="q">
+        <p>"What I appreciated most was how she showed up day-to-day. She's easy to work with, communicates clearly, and presents her thinking in a structured, straightforward way. She's also comfortable asking questions and sharing perspectives, which made her a strong contributor even as an intern."</p>
+        <div class="who">Mark Tonkelowitz — Cofounder · Maison Miru</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. ABOUT ============ -->
+<section id="about">
+  <div class="wrap">
+    <div class="rv">
+      <div class="eyebrow"><span class="num">05</span> About</div>
+      <h2 class="sect"><span style="white-space:nowrap">Mumbai →</span> <span style="white-space:nowrap">Milan →</span> <span style="white-space:nowrap">New York</span></h2>
+    </div>
+    <div class="about-grid rv">
+      <div>
+        <p>Over eight years I've worked with a Fortune 500 media house, with startups, and led global consumer luxury brands. The through-line is that I like being close to both ends of the work — the idea and the invoice.</p>
+        <p>I'm currently doing my MS in Marketing Analytics at Baruch College's Zicklin School of Business. Before that, an MBA at SDA Bocconi and an undergraduate degree in accounting and finance from the University of Mumbai. The accounting background is why I'm comfortable with a P&amp;L; the Bocconi years are why I'm comfortable being the only person in the room who hasn't been there before.</p>
+        <p>My view is that surrounding yourself with people who have the right attitude matters more than surrounding yourself with people who have the right skills. Skills are teachable on a deadline. Attitude isn't.</p>
+        <p>Outside work I experiment with cooking and escape into nature. I've tried ten coffee chains in the last three months, and I'm still counting.</p>
+      </div>
+      <div class="headshot">
+        <img src="assets/headshot.jpg" alt="Portrait of Niyati Shah" width="400" height="400">
+        <div>
+          <div class="n">Niyati Shah</div>
+          <div class="r">Brand marketing &amp; analytics</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 8. SKILLS ============ -->
+<section id="skills" class="alt">
+  <div class="wrap">
+    <div class="rv">
+      <div class="eyebrow"><span class="num">06</span> Toolkit</div>
+      <h2 class="sect">Skills <span class="amp">&amp;</span> tools</h2>
+    </div>
+    <div class="skills rv">
+      <div class="sk">
+        <h4>Paid &amp; integrated media</h4>
+        <ul>
+          <li>Amazon DSP</li><li>Amazon Advertising</li><li>Meta Ads Manager</li><li>Google Ads</li>
+          <li>LinkedIn Ads</li><li>Programmatic display</li><li>Bing Ads</li><li>TikTok Ads</li>
+          <li>GA4</li><li>A/B testing</li>
+        </ul>
+      </div>
+      <div class="sk j">
+        <h4>Data &amp; analytics</h4>
+        <ul>
+          <li>SQL</li><li>Tableau</li><li>Power BI</li><li>Pivot tables</li><li>Nielsen</li>
+          <li>ROAS / CAC / CPA</li><li>Predictive modelling</li>
+        </ul>
+      </div>
+      <div class="sk">
+        <h4>E-commerce &amp; CRM</h4>
+        <ul><li>Shopify</li><li>Klaviyo</li><li>Triple Whale</li></ul>
+      </div>
+      <div class="sk j">
+        <h4>AI &amp; creative tools</h4>
+        <ul><li>ChatGPT</li><li>Claude</li><li>Copilot</li><li>Figma</li><li>Canva</li></ul>
+      </div>
+      <div class="sk">
+        <h4>Marketing craft</h4>
+        <ul><li>Integrated campaigns</li><li>Brand strategy</li><li>P&amp;L management</li><li>Influencer &amp; affiliate</li><li>Legal &amp; Compliance partnership</li><li>Vendor negotiation</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 9. CONTACT ============ -->
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="rv">
+      <div class="eyebrow"><span class="num">07</span> Contact</div>
+      <h2>Let's build something <em>worth measuring</em>.</h2>
+      <div class="clinks">
+        <a href="mailto:niyatis14@gmail.com">Email →</a>
+        <a href="https://www.linkedin.com/in/niyatis14/" target="_blank" rel="noopener">LinkedIn →</a>
+        <a href="assets/Niyati-Shah-Resume.pdf" target="_blank" rel="noopener">Résumé →</a>
+        <a href="https://nshah14-25.github.io/analytics-portfolio/" target="_blank" rel="noopener">Analytics work →</a>
+        <a href="tel:+13392424243">+1 (339) 242-4243 →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-in">
+    <span>© <span id="yr"></span> Niyati Shah</span>
+    <span>New York, NY</span>
+    <span>Brand marketing × marketing analytics</span>
+  </div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="x" id="lbx" aria-label="Close">✕</button>
+  <button class="prev" id="lbp" aria-label="Previous">‹</button>
+  <img id="lbi" src="" alt="">
+  <button class="next" id="lbn" aria-label="Next">›</button>
+  <div class="cap" id="lbc"></div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  /* reveal */
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  },{threshold:.1, rootMargin:'0px 0px -50px 0px'});
+  document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
+
+  /* nav + progress */
+  var nav = document.getElementById('nav'), prog = document.getElementById('prog');
+  function onScroll(){
+    nav.classList.toggle('solid', window.scrollY > 36);
+    var h = document.documentElement.scrollHeight - window.innerHeight;
+    prog.style.width = h > 0 ? (window.scrollY / h * 100) + '%' : '0%';
+  }
+  window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+  /* counters */
+  var co = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(!e.isIntersecting) return;
+      var el = e.target, end = parseFloat(el.dataset.count),
+          pre = el.dataset.prefix || '', suf = el.dataset.suffix || '', t0 = null;
+      function step(t){
+        if(!t0) t0 = t;
+        var p = Math.min((t - t0)/1000, 1), eased = 1 - Math.pow(1 - p, 3);
+        el.innerHTML = pre + Math.round(end * eased) + '<span class="u">' + suf + '</span>';
+        if(p < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step); co.unobserve(el);
+    });
+  },{threshold:.5});
+  document.querySelectorAll('[data-count]').forEach(function(el){ co.observe(el); });
+
+  /* case accordions */
+  var cases = Array.prototype.slice.call(document.querySelectorAll('[data-case]'));
+  cases.forEach(function(c){
+    var head = c.querySelector('.case-head'),
+        body = c.querySelector('.case-body'),
+        inner = c.querySelector('.case-inner');
+    function sync(){ if(c.classList.contains('open')) body.style.maxHeight = inner.scrollHeight + 'px'; }
+    c._sync = sync;
+    if(window.ResizeObserver) new ResizeObserver(sync).observe(inner);
+    inner.querySelectorAll('img').forEach(function(im){ im.addEventListener('load', sync); });
+    head.addEventListener('click', function(){
+      var open = c.classList.toggle('open');
+      head.setAttribute('aria-expanded', open ? 'true' : 'false');
+      body.style.maxHeight = open ? inner.scrollHeight + 'px' : '0px';
+    });
+  });
+  window.addEventListener('resize', function(){ cases.forEach(function(c){ c._sync(); }); });
+  window.addEventListener('load', function(){ cases.forEach(function(c){ c._sync(); }); });
+
+  if(cases.length){
+    var f = cases[0];
+    f.classList.add('open');
+    f.querySelector('.case-head').setAttribute('aria-expanded','true');
+    f.querySelector('.case-body').style.maxHeight = f.querySelector('.case-inner').scrollHeight + 'px';
+  }
+
+  /* lightbox */
+  var lb = document.getElementById('lb'), lbi = document.getElementById('lbi'), lbc = document.getElementById('lbc');
+  var figs = [], idx = 0;
+  function collect(){ figs = Array.prototype.slice.call(document.querySelectorAll('[data-lb]')); }
+  collect();
+  function fit(){
+    var nw = lbi.naturalWidth, nh = lbi.naturalHeight;
+    if(!nw || !nh){ lbi.style.width = ''; return; }
+    var s = Math.min(window.innerWidth*0.92/nw, window.innerHeight*0.84/nh, 1.3);
+    lbi.style.width  = (s > 1) ? Math.round(nw * s) + 'px' : '';
+    lbi.style.height = 'auto';
+  }
+  lbi.addEventListener('load', fit);
+  window.addEventListener('resize', function(){ if(lb.classList.contains('on')) fit(); });
+  function show(i){
+    if(!figs.length) return;
+    idx = (i + figs.length) % figs.length;
+    var f = figs[idx];
+    lbi.style.width = '';
+    lbi.src = f.dataset.lb;
+    lbi.alt = f.dataset.cap || '';
+    lbc.textContent = f.dataset.cap || '';
+    if(lbi.complete) fit();
+  }
+  document.addEventListener('click', function(e){
+    var f = e.target.closest('[data-lb]');
+    if(f){ collect(); show(figs.indexOf(f)); lb.classList.add('on'); document.body.style.overflow='hidden'; }
+  });
+  function close(){ lb.classList.remove('on'); document.body.style.overflow=''; lbi.src=''; }
+  document.getElementById('lbx').addEventListener('click', close);
+  document.getElementById('lbp').addEventListener('click', function(e){ e.stopPropagation(); show(idx-1); });
+  document.getElementById('lbn').addEventListener('click', function(e){ e.stopPropagation(); show(idx+1); });
+  lb.addEventListener('click', function(e){ if(e.target === lb || e.target === lbi) close(); });
+  document.addEventListener('keydown', function(e){
+    if(!lb.classList.contains('on')) return;
+    if(e.key === 'Escape') close();
+    if(e.key === 'ArrowLeft') show(idx-1);
+    if(e.key === 'ArrowRight') show(idx+1);
+  });
+})();
+</script>
+</body>
+</html>
